@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --button-bg: #1e1e1e;
+      --button-hover: #2c2c2c;
+      --accent-color: #bb86fc;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--accent-color);
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .tool-button {
+      background-color: var(--button-bg);
+      color: var(--text-color);
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      display: block;
+    }
+
+    .tool-button:hover {
+      background-color: var(--button-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .button-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>NLP Tools With You</h1>
+    <div class="button-grid">
+      <a href="/word-analyzer" class="tool-button">Word Analyzer</a>
+      <a href="/youtube-summarizer" class="tool-button">YouTube Summarizer</a>
+      <a href="/sentiment-analysis" class="tool-button">Sentiment Analysis</a>
+      <a href="/text-classification" class="tool-button">Text Classification</a>
+      <a href="/named-entity-recognition" class="tool-button">Named Entity Recognition</a>
+      <a href="/language-translation" class="tool-button">Language Translation</a>
+      <a href="/text-summarization" class="tool-button">Text Summarization</a>
+      <a href="/keyword-extraction" class="tool-button">Keyword Extraction</a>
+      <a href="/topic-modeling" class="tool-button">Topic Modeling</a>
+      <a href="/grammar-checker" class="tool-button">Grammar Checker</a>
+    </div>
+  </div>
+</body>
+</html>

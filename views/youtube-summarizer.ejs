@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Summarizer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #ff0000;
+      --secondary-color: #282828;
+      --text-color: #ffffff;
+      --bg-color: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .input-container {
+      background-color: var(--secondary-color);
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-group {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    input[type="text"] {
+      flex-grow: 1;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background-color: #3a3a3a;
+      color: var(--text-color);
+      border-radius: 5px 0 0 5px;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    .summary-container {
+      background-color: var(--secondary-color);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .summary-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .summary-content {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .input-group {
+        flex-direction: column;
+      }
+
+      input[type="text"], button {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      input[type="text"] {
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fab fa-youtube"></i> YouTube Summarizer</h1>
+      <p>Get quick summaries of YouTube videos</p>
+    </header>
+
+    <div class="input-container">
+      <form action="/youtube-summarizer" method="POST">
+        <div class="input-group">
+          <input type="text" name="videoLink" placeholder="Paste YouTube video link here" required>
+          <button type="submit"><i class="fas fa-magic"></i> Summarize</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="summary-container">
+      <% if (videoLink) { %>
+        <h2 class="summary-title">Summary for: <%= videoLink %></h2>
+        <p class="summary-content">
+          <%= summary || "Your video summary will appear here after you submit a YouTube link." %>
+        </p>
+      <% } else { %>
+        <p class="summary-content">Please submit a YouTube link to get a summary.</p>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>
