@@ -91,8 +91,8 @@ This project is licensed under the MIT License - see the `LICENSE.md` file for d
 
 ## 📬 Contact
 
-Muhammed Suhail - [@yourtwitter](https://x.com/msuhailcmd) - msuhailcmd@gmail.com.com  
-Project Link: [https://github.com/yourusername/nlp-project](https://github.com/mskcmd/npl_Project)
+Muhammed Suhail - [@X](https://x.com/msuhailcmd) - msuhailcmd@gmail.com.com  
+Project Link: [nlp-project](https://github.com/mskcmd/npl_Project)
 
 <p align="center">
   Made with ❤️ by Muhammed Suhail
