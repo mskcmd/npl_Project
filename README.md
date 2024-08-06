@@ -97,9 +97,4 @@ Project Link: [https://github.com/yourusername/nlp-project](https://github.com/m
 <p align="center">
   Made with ❤️ by [Muhammed Suhail]
 </p>
-```
 
-### Notes:
-
-- Make sure to replace placeholders like `Muhammed Suhail`, `[yourtwitter](https://x.com/msuhailcmd)`, `Your Name`, and `msuhailcmd@gmail.com` with your actual details.
-- Add the `LICENSE.md` file in your project root if not already present.
