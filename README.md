@@ -91,10 +91,10 @@ This project is licensed under the MIT License - see the `LICENSE.md` file for d
 
 ## 📬 Contact
 
-Your Name - [@yourtwitter](https://x.com/msuhailcmd) - email@example.com  
+Muhammed Suhail - [@yourtwitter](https://x.com/msuhailcmd) - msuhailcmd@gmail.com.com  
 Project Link: [https://github.com/yourusername/nlp-project](https://github.com/mskcmd/npl_Project)
 
 <p align="center">
-  Made with ❤️ by [Muhammed Suhail]
+  Made with ❤️ by Muhammed Suhail
 </p>
 
